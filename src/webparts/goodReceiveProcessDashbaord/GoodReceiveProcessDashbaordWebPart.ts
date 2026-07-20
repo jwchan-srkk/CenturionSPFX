@@ -9,6 +9,7 @@ import * as $ from 'jquery';
 import 'datatables.net';
 
 import styles from './GoodReceiveProcessDashbaordWebPart.module.scss';
+import sharedStyles from '../../SharedServices/sharedStyles.module.scss';
 import * as strings from 'GoodReceiveProcessDashbaordWebPartStrings';
 import { SharePointRestService } from '../../SharedServices/sharePointRestService';
 
@@ -254,14 +255,19 @@ export default class GoodReceiveProcessDashbaordWebPart extends BaseClientSideWe
             <div>
               <h2 class="${styles.title}">Good Receive Process Dashboard</h2>
             </div>
-            <div class="${styles.summaryBlock}">
-              <span class="${styles.summaryLabel}">Total records</span>
-              <span class="${styles.summaryValue}">${this._rows.length}</span>
+            <div class="${styles.headerActions}">
+              <button type="button" class="${sharedStyles.refreshButton}" data-action="refresh">Refresh</button>
+              <div class="${styles.summaryBlock}">
+                <span class="${styles.summaryLabel}">Total records</span>
+                <span class="${styles.summaryValue}">${this._rows.length}</span>
+              </div>
             </div>
           </div>
           ${bodyMarkup}
         </div>
       </section>`;
+
+    this._bindUiEvents();
 
     if (this._rows.length > 0) {
       this._initializeDataTable();
@@ -280,14 +286,30 @@ export default class GoodReceiveProcessDashbaordWebPart extends BaseClientSideWe
             <div>
               <h2 class="${styles.title}">Good Receive Process Dashboard</h2>
             </div>
-            <div class="${styles.summaryBlock}">
-              <span class="${styles.summaryLabel}">Total records</span>
-              <span class="${styles.summaryValue}">0</span>
+            <div class="${styles.headerActions}">
+              <button type="button" class="${sharedStyles.refreshButton}" data-action="refresh">Refresh</button>
+              <div class="${styles.summaryBlock}">
+                <span class="${styles.summaryLabel}">Total records</span>
+                <span class="${styles.summaryValue}">0</span>
+              </div>
             </div>
           </div>
           <div class="${isError ? styles.errorState : styles.loadingState}">${message}</div>
         </div>
       </section>`;
+
+    this._bindUiEvents();
+  }
+
+  private _bindUiEvents(): void {
+    const refreshButton = this.domElement.querySelector('[data-action="refresh"]') as HTMLButtonElement | null;
+
+    if (refreshButton) {
+      refreshButton.onclick = () => {
+        this._renderShell('Loading dashboard records...');
+        void this._loadDashboardData();
+      };
+    }
   }
 
   // ─── DataTable ───────────────────────────────────────────────────────────────

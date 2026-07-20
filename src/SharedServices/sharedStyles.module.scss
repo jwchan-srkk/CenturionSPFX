@@ -32,6 +32,22 @@
   margin-bottom: 16px;
 }
 
+.refreshButton {
+  appearance: none;
+  border: 1px solid var(--inputBorder, #c8c6c4);
+  background: #ffffff;
+  color: inherit;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background: var(--buttonBackgroundHovered, #edebe9);
+  }
+}
+
 .tableStyle {
   table-layout: fixed;
   width: 100%;

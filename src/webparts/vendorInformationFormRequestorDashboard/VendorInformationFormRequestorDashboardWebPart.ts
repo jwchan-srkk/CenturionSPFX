@@ -9,6 +9,7 @@ import * as $ from 'jquery';
 import 'datatables.net';
 
 import styles from './VendorInformationFormRequestorDashboardWebPart.module.scss';
+import sharedStyles from '../../SharedServices/sharedStyles.module.scss';
 import * as strings from 'VendorInformationFormRequestorDashboardWebPartStrings';
 import { SharePointRestService } from '../../SharedServices/sharePointRestService';
 
@@ -131,7 +132,7 @@ export default class VendorInformationFormRequestorDashboardWebPart extends Base
               <h2 class="${css.dashboardTitle}">Vendor Information Form Requestor Dashboard</h2>
             </div>
             <div class="${css.dashboardHeaderActions}">
-              <button type="button" class="${css.refreshButton}" data-action="refresh">Refresh</button>
+              <button type="button" class="${sharedStyles.refreshButton}" data-action="refresh">Refresh</button>
               <div class="${css.dashboardMeta}">
                 <span class="${css.totalLabel}">TOTAL RECORDS</span>
                 <span class="${css.totalValue}" data-dashboard-total>0</span>

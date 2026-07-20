@@ -24,6 +24,12 @@
   margin-bottom: 20px;
 }
 
+.headerActions {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
 .title {
   margin: 0;
   color: #201f1e;

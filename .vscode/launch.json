@@ -18,6 +18,42 @@
         "--remote-debugging-port=9222",
         "-incognito"
       ]
+    },
+    {
+      "name": "VIFDashboard",
+      "type": "msedge",
+      "request": "launch",
+      "url": "https://centurioncorporation.sharepoint.com/sites/FinanceRPAProcess-UAT/SitePages/VIFDashboard.aspx?debug=true&noredir=true&debugManifestsFile=https://localhost:4321/temp/manifests.js",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///.././src/*": "${webRoot}/src/*",
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "-incognito"
+      ]
+    },
+    {
+      "name": "GRNDashboard",
+      "type": "msedge",
+      "request": "launch",
+      "url": "https://centurioncorporation.sharepoint.com/sites/FinanceRPAProcess-UAT/SitePages/GRPDashboard.aspx?debug=true&noredir=true&debugManifestsFile=https://localhost:4321/temp/manifests.js",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///.././src/*": "${webRoot}/src/*",
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "-incognito"
+      ]
     }
   ]
 }
