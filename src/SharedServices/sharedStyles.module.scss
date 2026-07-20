@@ -1,0 +1,155 @@
+.filterPanel select,
+.filterPanel input {
+  width: 180px;
+  font-size: 14px;
+  height: auto;
+  padding: 5px 9px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.filterPanel {
+  display: flex;
+  justify-content: flex-end; /* align all to the right */
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 10px
+}
+
+.filterRow {
+  display: flex;
+  justify-content: flex-end; /* push everything inside to the right */
+  align-items: center;
+  gap: 8px;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.tableStyle {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.tableStyle th,
+.tableStyle td {
+  width: 14.28%; // For 7 columns, adjust for your column count
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle !important;
+  text-align: left !important;
+  padding: 8px 4px;
+  position: relative;
+}
+
+.tableStyle th {
+  white-space: normal;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.tableStyle td {
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tableStyle td:hover {
+  background-color: #f5f5f5;
+}
+
+.tableStyle th:last-child,
+.tableStyle td:last-child {
+  width: 70px !important;
+  min-width: 70px !important;
+  max-width: 70px !important;
+  text-align: center !important;
+  white-space: nowrap;
+}
+
+.tableHeader {
+  background-color: #ebebeb;
+  color: #3b3b3b;
+  font-weight: 500 !important;
+}
+
+.actionButton {
+  background-color: #156082;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 2px 15px;
+  font-size: 12px;
+  min-width: 45px;
+}
+
+.searchButton{
+  margin-left: 8px;
+  padding: 5px 9px;
+  background-color: #156082;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.resetButton{
+  margin-left: 8px;
+  padding: 5px 9px;
+  background-color: white;
+  color: #156082;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: fixed !important;
+  background-color: #333 !important;
+  color: white !important;
+  padding: 8px 12px !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  z-index: 10000 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+  pointer-events: none !important;
+  opacity: 0.9 !important;
+  transition: opacity 0.2s ease !important;
+  max-width: 300px !important;
+}
+
+.tooltip.show {
+  opacity: 1 !important;
+}
+
+.tooltip:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.buttonIcon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.buttonLabel {
+  font-size: 16px;
+  line-height: 1.3;
+}

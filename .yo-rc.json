@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "18.19.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.2",
+    "libraryName": "finance-approval-workflow-dashboard",
+    "libraryId": "47cd0e62-4003-4a89-a91c-954fe0d8ef68",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Finance Approval Workflow Dashboard",
+    "solutionShortDescription": "Finance Approval Workflow Dashboard description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

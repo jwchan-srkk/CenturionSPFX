@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "finance-approval-workflow-dashboard-client-side-solution",
+    "id": "47cd0e62-4003-4a89-a91c-954fe0d8ef68",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Finance Approval Workflow Dashboard description"
+      },
+      "longDescription": {
+        "default": "Finance Approval Workflow Dashboard description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "finance-approval-workflow-dashboard Feature",
+        "description": "The feature that activates elements of the finance-approval-workflow-dashboard solution.",
+        "id": "d2af66d2-990e-4d87-b7e9-e4a5ffce4458",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/finance-approval-workflow-dashboard.sppkg"
+  }
+}

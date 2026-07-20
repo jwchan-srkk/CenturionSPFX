@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "vendor-information-form-requestor-dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/vendorInformationFormRequestorDashboard/VendorInformationFormRequestorDashboardWebPart.js",
+          "manifest": "./src/webparts/vendorInformationFormRequestorDashboard/VendorInformationFormRequestorDashboardWebPart.manifest.json"
+        }
+      ]
+    },
+    "task-dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/taskDashboard/TaskDashboardWebPart.js",
+          "manifest": "./src/webparts/taskDashboard/TaskDashboardWebPart.manifest.json"
+        }
+      ]
+    },
+    "good-receive-process-dashbaord-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/goodReceiveProcessDashbaord/GoodReceiveProcessDashbaordWebPart.js",
+          "manifest": "./src/webparts/goodReceiveProcessDashbaord/GoodReceiveProcessDashbaordWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "VendorInformationFormRequestorDashboardWebPartStrings": "lib/webparts/vendorInformationFormRequestorDashboard/loc/{locale}.js",
+    "TaskDashboardWebPartStrings": "lib/webparts/taskDashboard/loc/{locale}.js",
+    "GoodReceiveProcessDashbaordWebPartStrings": "lib/webparts/goodReceiveProcessDashbaord/loc/{locale}.js"
+  }
+}

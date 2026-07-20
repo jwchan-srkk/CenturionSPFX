@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "7625c01a-489a-41f9-99bb-9c02f3d72bd2",
+  "alias": "VendorInformationFormRequestorDashboardWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportsThemeVariants": true,
+
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab",
+    "SharePointFullPage"
+  ],
+
+  "preconfiguredEntries": [
+    {
+      "groupId": "1df9c689-dc1f-4d3a-bba1-198f44d52d61",
+      "group": {
+        "default": "Advanced"
+      },
+      "title": {
+        "default": "Vendor Information Form Requestor Dashboard"
+      },
+      "description": {
+        "default": "Displays the Vendor Information requestor dashboard."
+      },
+      "officeFabricIconFontName": "Table",
+      "properties": {
+        "description": "Vendor Information Form Requestor Dashboard",
+        "sharePointSiteUrl": "https://centurioncorporation.sharepoint.com/sites/FinanceRPAProcess-UAT",
+        "listName": "Vendor Information"
+      }
+    }
+  ]
+}

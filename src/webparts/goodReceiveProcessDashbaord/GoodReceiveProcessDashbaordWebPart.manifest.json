@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "9f5bf7ae-59ce-4c9f-b120-a6da4c087bbb",
+  "alias": "GoodReceiveProcessDashbaordWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportsThemeVariants": true,
+
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab",
+    "SharePointFullPage"
+  ],
+
+  "preconfiguredEntries": [
+    {
+      "groupId": "1df9c689-dc1f-4d3a-bba1-198f44d52d61",
+      "group": {
+        "default": "Advanced"
+      },
+      "title": {
+        "default": "Good Receive Process Dashboard"
+      },
+      "description": {
+        "default": "Displays a dashboard of Good Receive Process records from a SharePoint list."
+      },
+      "officeFabricIconFontName": "Table",
+      "properties": {
+        "description": "Good Receive Process Dashboard",
+        "sharePointSiteUrl": "",
+        "listName": "",
+        "actionLink": ""
+      }
+    }
+  ]
+}
